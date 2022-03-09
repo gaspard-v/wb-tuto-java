@@ -4,7 +4,10 @@
   "description": "site web des tuto java fx",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "watch": "webpack --mode=development --watch",
+    "start": "webpack serve --history-api-fallback --hot --mode=development"
   },
   "repository": {
     "type": "git",
