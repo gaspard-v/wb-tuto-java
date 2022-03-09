@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import data from './data.json';
 
 render(
-	<BrowserRouter>
+	<BrowserRouter basename={BASENAME}>
 		<Menu data={data} />
 		<Navigator data={data} />
 	</BrowserRouter>,

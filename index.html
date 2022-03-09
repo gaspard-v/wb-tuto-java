@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+	<head id="head">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Tutos Java et JavaFX</title>
+		<script>
+			'use strict';
+			var ENABLE_AUTO_BASENAME = false;
+			var BASENAME = '';
+			function test_basename() {
+				if (ENABLE_AUTO_BASENAME == false) {
+					return;
+				}
+				BASENAME = window.location.pathname.split('/').filter(function (a) {
+					return a;
+				});
+				if (BASENAME.length == 0) BASENAME = null;
+				else BASENAME = ''.concat('/', BASENAME[0]);
+			}
+			test_basename();
+			var react_script_src = ''.concat(BASENAME, '/build/app.bundle.js');
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.src = react_script_src;
+			s.innerHTML = null;
+			s.defer = true;
+			document.getElementById('head').appendChild(s);
+		</script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tutos Java et JavaFX</title>
-
-    <script src="/build/app.bundle.js" defer></script>
-</head>
-
-<body>
-    <section class="appContainer"></section>
-</body>
-
+	<body>
+		<section class="appContainer"></section>
+	</body>
 </html>
