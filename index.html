@@ -17,7 +17,7 @@
 				BASENAME = window.location.pathname.split('/').filter(function (a) {
 					return a;
 				});
-				if (BASENAME.length == 0) BASENAME = null;
+				if (BASENAME.length == 0) BASENAME = '';
 				else BASENAME = ''.concat('/', BASENAME[0]);
 			}
 			test_basename();
