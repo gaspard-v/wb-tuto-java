@@ -20,14 +20,17 @@
 				if (BASENAME.length == 0) BASENAME = '';
 				else BASENAME = ''.concat('/', BASENAME[0]);
 			}
+			function create_script(script_path) {
+				var react_script_src = ''.concat(BASENAME, script_path);
+				var s = document.createElement('script');
+				s.type = 'text/javascript';
+				s.src = react_script_src;
+				s.innerHTML = null;
+				s.defer = true;
+				document.head.appendChild(s);
+			}
 			test_basename();
-			var react_script_src = ''.concat(BASENAME, '/build/app.bundle.js');
-			var s = document.createElement('script');
-			s.type = 'text/javascript';
-			s.src = react_script_src;
-			s.innerHTML = null;
-			s.defer = true;
-			document.head.appendChild(s);
+			create_script('/build/app.bundle.js');
 		</script>
 	</head>
 
