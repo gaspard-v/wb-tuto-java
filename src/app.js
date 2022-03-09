@@ -1,6 +1,12 @@
 import { render } from 'react-dom';
+import Menu from './Menu';
+import Navigator from './Navigator';
+import { BrowserRouter } from 'react-router-dom';
 
 render(
-	<p>je suis encore qu'une test</p>,
+	<BrowserRouter>
+		<Menu></Menu>
+		<Navigator></Navigator>
+	</BrowserRouter>,
 	document.querySelector('.appContainer')
 );
