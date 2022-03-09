@@ -1,4 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
+import Display from './Display';
 export default function Navigator() {
-	return <p>rien pour l'instant ...</p>;
+	return (
+		<Routes>
+			<Route path="/" element={<Display />}></Route>
+			<Route path="/article/:id" element={<Display />}></Route>
+		</Routes>
+	);
 }
