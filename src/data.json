@@ -15,5 +15,17 @@
             "hidden": false,
             "deprecated": true
         }
+    },
+
+    {
+        "id": 2,
+        "version": "1.0",
+        "creation_date": "date3",
+        "modification_date": "date4",
+        "title": "je suis un titre 1",
+        "description": "je suis une description 1",
+        "content": "je suis le document 1",
+        "tags": [],
+        "options": {}
     }
 ]

@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import data from './data.json';
-export default function Menu() {
+export default function Menu({ data }) {
 	const displayMenu = ({ title, description, id }) => {
 		return (
 			<li key={id}>
@@ -13,6 +12,9 @@ export default function Menu() {
 	};
 	return (
 		<nav>
+			<NavLink to="/">
+				<h1>Retour</h1>
+			</NavLink>
 			<ol>
 				{data.filter(({ options: { hidden } }) => !hidden).map(displayMenu)}
 			</ol>
