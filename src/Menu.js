@@ -40,14 +40,26 @@ export default function Menu({ data }) {
 							variant="h6"
 							noWrap
 							component="div"
-							sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+							sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' } }}
 						>
-							<Link component={NavLink} to="/" color="inherit">
-								Accueil
-							</Link>
-							<Link component={NavLink} to="/article" color="inherit">
-								Liste des articles
-							</Link>
+							<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+								<Link
+									component={NavLink}
+									to="/"
+									color="inherit"
+									sx={{ mr: 2, color: 'white', display: 'block' }}
+								>
+									Accueil
+								</Link>
+								<Link
+									component={NavLink}
+									to="/article"
+									color="inherit"
+									sx={{ mr: 2, color: 'white', display: 'block' }}
+								>
+									Liste des articles
+								</Link>
+							</Box>
 						</Typography>
 					</Toolbar>
 				</AppBar>

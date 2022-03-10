@@ -81,5 +81,6 @@ export default function App() {
 			);
 		}
 	}
-	return <Container maxWidth="">{displayApp()}</Container>;
+	return displayApp();
+	//return <Container maxWidth="xl">{displayApp()}</Container>;
 }
