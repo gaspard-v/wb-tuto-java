@@ -42,7 +42,7 @@ export default function Menu({ data }) {
 							component="div"
 							sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' } }}
 						>
-							<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+							<Box sx={{ flexGrow: 1, display: 'flex' }}>
 								<Link
 									component={NavLink}
 									to="/"
