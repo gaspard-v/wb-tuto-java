@@ -16,7 +16,8 @@ export default function App() {
 	const [data, setData] = useState(null);
 	const [error, setError] = useState(null);
 	useEffect(() => {
-		setTimeout(fetchData, 5000);
+		//setTimeout(fetchData, 5000); //utilisé pour les test
+		fetchData();
 	}, []);
 
 	function fetchData() {
