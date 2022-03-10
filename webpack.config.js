@@ -3,11 +3,11 @@ const path = require('path');
 
 module.exports = (env, { mode }) => ({
 	// Fichier d'entrée :
-	entry: './src/app.js',
+	entry: './src/index.js',
 	// Fichier de sortie :
 	output: {
 		path: path.resolve(__dirname, './build'),
-		filename: 'app.bundle.js',
+		filename: 'index.bundle.js',
 		// configuration du fast-refresh [1/3]
 		// pour que webpack serve publie le js dans un sous-dossier fictif build
 		publicPath: '/build/',

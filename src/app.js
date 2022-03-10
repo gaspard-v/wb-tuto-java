@@ -1,10 +1,9 @@
-import { render } from 'react-dom';
 import Menu from './Menu';
 import Navigator from './Navigator';
 import { BrowserRouter } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-const App = () => {
+export default function App() {
 	const [data, setData] = useState(null);
 	const [error, setError] = useState(null);
 	useEffect(() => {
@@ -45,6 +44,4 @@ const App = () => {
 		}
 	}
 	return displayApp();
-};
-
-render(<App />, document.querySelector('.appContainer'));
+}
