@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import Link from '@mui/material/Link';
 
 export default function Menu({ data }) {
 	const displayMenu = ({ title, description, id }) => {
@@ -22,12 +23,6 @@ export default function Menu({ data }) {
 	};
 	return (
 		<nav>
-			<NavLink to="/">
-				<h1>Retour</h1>
-			</NavLink>
-			<NavLink to="/article">
-				<h1>Liste des articles</h1>
-			</NavLink>
 			<Box sx={{ flexGrow: 1 }}>
 				<AppBar position="static">
 					<Toolbar>
@@ -37,8 +32,23 @@ export default function Menu({ data }) {
 							color="inherit"
 							aria-label="open drawer"
 							sx={{ mr: 2 }}
-						/>
-						<MenuIcon />
+						>
+							<MenuIcon />
+						</IconButton>
+
+						<Typography
+							variant="h6"
+							noWrap
+							component="div"
+							sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+						>
+							<Link component={NavLink} to="/" color="inherit">
+								Accueil
+							</Link>
+							<Link component={NavLink} to="/article" color="inherit">
+								Liste des articles
+							</Link>
+						</Typography>
 					</Toolbar>
 				</AppBar>
 			</Box>

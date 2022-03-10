@@ -21,7 +21,7 @@ export default function App() {
 	}, []);
 
 	function fetchData() {
-		const data_url = `${BASENAME}/src/data.json`;
+		const data_url = `${BASENAME}/json/data.json`;
 		fetch(data_url)
 			.then(response => {
 				if (response.ok) {
