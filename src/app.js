@@ -70,8 +70,10 @@ export default function App() {
 					justifyContent="center"
 					style={{ minHeight: '100vh' }}
 				>
-					<Grid item xs={2}>
+					<Grid item>
 						<CircularProgress />
+					</Grid>
+					<Grid item>
 						<p>chargement...</p>
 					</Grid>
 				</Grid>
