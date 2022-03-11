@@ -37,7 +37,7 @@ par exemple dans le cas ou vous mettez les fichiers dans un sous répertoire _ex
 
 vous **devez** modifier le fichier `index.html` et modifier `var BASENAME = '';` en spécifiant le sous dossier, dans l'exemple on mettra `var BASENAME = 'javafx';`.
 
-_vous pouvez aussi activer la recherche automatique de basename en activant `var ENABLE_AUTO_BASENAME = true;` et en laissant `BASENAME` vide, ==cependant ce n'est pas forcement fiable==_
+_vous pouvez aussi activer la recherche automatique de basename en activant `var ENABLE_AUTO_BASENAME = true;` et en laissant `BASENAME` vide, **cependant ce n'est pas forcement fiable**_
 
 ### version de production
 
