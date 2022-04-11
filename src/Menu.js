@@ -21,6 +21,16 @@ export default function Menu({ data }) {
 			</li>
 		);
 	};
+	const menuItems = [
+		{
+			name: 'Accueil',
+			to: '/',
+		},
+		{
+			name: 'Liste des articles',
+			to: '/article',
+		},
+	];
 	return (
 		<nav>
 			<Box sx={{ flexGrow: 1 }}>
@@ -43,22 +53,18 @@ export default function Menu({ data }) {
 							sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' } }}
 						>
 							<Box sx={{ flexGrow: 1, display: 'flex' }}>
-								<Link
-									component={NavLink}
-									to="/"
-									color="inherit"
-									sx={{ mr: 2, color: 'white', display: 'block' }}
-								>
-									Accueil
-								</Link>
-								<Link
-									component={NavLink}
-									to="/article"
-									color="inherit"
-									sx={{ mr: 2, color: 'white', display: 'block' }}
-								>
-									Liste des articles
-								</Link>
+								{menuItems.map(({ name, to }) => {
+									return (
+										<Link
+											component={NavLink}
+											to={to}
+											color="inherit"
+											sx={{ mr: 2, color: 'white', display: 'block' }}
+										>
+											{name}
+										</Link>
+									);
+								})}
 							</Box>
 						</Typography>
 					</Toolbar>
