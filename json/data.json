@@ -4,9 +4,9 @@
         "version": "1.0",
         "creation_date": "date1",
         "modification_date": "date2",
-        "title": "je suis un titre",
-        "description": "je suis une description",
-        "filename": "test.md",
+        "title": "Tutoriel javaFX",
+        "description": "Part 1 Scene builder",
+        "filename": "part1.md",
         "tags": [
             "tag1",
             "tag2"

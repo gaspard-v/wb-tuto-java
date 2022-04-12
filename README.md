@@ -11,7 +11,7 @@ le site web est construit avec ReactJS et Material UI, ainsi que webpack et babe
 1.  Le site web récupère les informations qu'il doit afficher en faisant
     une requête XHR vers `json/data.json`. Ce fichier contient toutes les
     informations concernant les différents articles.
-2.  si un utilisateur click sur un article, le site web va récupéré l'article en question dans le dossier `article/article.md`
+2.  si un utilisateur click sur un article, le site web va récupéré l'article en question dans le dossier `article/article.md`, les articles sont écrit en markdown, [markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### Répertoires
 
