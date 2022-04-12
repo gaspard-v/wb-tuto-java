@@ -13,7 +13,7 @@ le site web est construit avec ReactJS et Material UI, ainsi que webpack et babe
     informations concernant les différents articles.
 2.  **Si vous devez modifier un article ou en rajouter un, veuillez ne modifier que ce `json/data.json`**
 3.  Vous pouvez (devez ...) utiliser du **markdown** [(exemple de markdown)](https://markdown-it.github.io/, 'exemple') lorsque vous écrivez dans le champs `content` (le contenu d'un article)
-4.  ⚠️la partie `content` d'un article **doit** être encodé en **base64**, enfin d'éviter des problèmes de charactère d'échappement dans le JSON ⚠️
+4.  ⚠️la partie `content` d'un article **doit** être encodé en **urlencode**, enfin d'éviter des problèmes de charactère d'échappement dans le JSON, regarder sur ce lien [(www.urlencoder.org)](https://www.urlencoder.org/) ⚠️
 
 ### Répertoires
 

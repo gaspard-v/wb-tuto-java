@@ -6,13 +6,13 @@
         "modification_date": "date2",
         "title": "je suis un titre",
         "description": "je suis une description",
-        "content": "je suis le document",
+        "content": "%23%20je%20suis%20le%20document%C3%A9%0A%0Aet%20oui",
         "tags": [
             "tag1",
             "tag2"
         ],
         "options": {
-            "hidden": true,
+            "hidden": false,
             "deprecated": true
         }
     },
