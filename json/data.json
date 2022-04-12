@@ -12,7 +12,7 @@
             "tag2"
         ],
         "options": {
-            "hidden": false,
+            "hidden": true,
             "deprecated": true
         }
     },

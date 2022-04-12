@@ -1,3 +1,5 @@
+import MenuItemsInline from './MenuItemsInline';
+import MenuItemsBurger from './MenuItemsBurger';
 import { NavLink } from 'react-router-dom';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
@@ -25,10 +27,12 @@ export default function Menu({ data }) {
 		{
 			name: 'Accueil',
 			to: '/',
+			id: 1,
 		},
 		{
 			name: 'Liste des articles',
 			to: '/article',
+			id: 2,
 		},
 	];
 	return (
@@ -36,37 +40,8 @@ export default function Menu({ data }) {
 			<Box sx={{ flexGrow: 1 }}>
 				<AppBar position="static">
 					<Toolbar>
-						<IconButton
-							size="large"
-							edge="start"
-							color="inherit"
-							aria-label="open drawer"
-							sx={{ mr: 2 }}
-						>
-							<MenuIcon />
-						</IconButton>
-
-						<Typography
-							variant="h6"
-							noWrap
-							component="div"
-							sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' } }}
-						>
-							<Box sx={{ flexGrow: 1, display: 'flex' }}>
-								{menuItems.map(({ name, to }) => {
-									return (
-										<Link
-											component={NavLink}
-											to={to}
-											color="inherit"
-											sx={{ mr: 2, color: 'white', display: 'block' }}
-										>
-											{name}
-										</Link>
-									);
-								})}
-							</Box>
-						</Typography>
+						<MenuItemsBurger items={menuItems} />
+						<MenuItemsInline items={menuItems} />
 					</Toolbar>
 				</AppBar>
 			</Box>
