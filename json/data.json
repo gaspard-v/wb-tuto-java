@@ -6,7 +6,7 @@
         "modification_date": "date2",
         "title": "je suis un titre",
         "description": "je suis une description",
-        "content": "%23%20je%20suis%20le%20document%C3%A9%0A%0Aet%20oui",
+        "filename": "test.md",
         "tags": [
             "tag1",
             "tag2"
@@ -24,7 +24,7 @@
         "modification_date": "date4",
         "title": "je suis un titre 1",
         "description": "je suis une description 1",
-        "content": "je suis le document 1",
+        "filename": "test2.md",
         "tags": [],
         "options": {}
     }

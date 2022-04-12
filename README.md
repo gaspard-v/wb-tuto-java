@@ -11,9 +11,7 @@ le site web est construit avec ReactJS et Material UI, ainsi que webpack et babe
 1.  Le site web récupère les informations qu'il doit afficher en faisant
     une requête XHR vers `json/data.json`. Ce fichier contient toutes les
     informations concernant les différents articles.
-2.  **Si vous devez modifier un article ou en rajouter un, veuillez ne modifier que ce `json/data.json`**
-3.  Vous pouvez (devez ...) utiliser du **markdown** [(exemple de markdown)](https://markdown-it.github.io/, 'exemple') lorsque vous écrivez dans le champs `content` (le contenu d'un article)
-4.  ⚠️la partie `content` d'un article **doit** être encodé en **urlencode**, enfin d'éviter des problèmes de charactère d'échappement dans le JSON, regarder sur ce lien [(www.urlencoder.org)](https://www.urlencoder.org/) ⚠️
+2.  si un utilisateur click sur un article, le site web va récupéré l'article en question dans le dossier `article/article.md`
 
 ### Répertoires
 
@@ -22,6 +20,7 @@ le site web est construit avec ReactJS et Material UI, ainsi que webpack et babe
 `images/`: Dossier des fichiers statiques images
 `json/`: Dossier des fichiers JSON, en particulier le fichier `data.json` qui contient les articles
 `build/`: Dossier qui est créer lors de la génération du projet
+`article`: Dossier contenant les fichiers des tutos écrit en markdown
 
 ## Installation du projet
 
@@ -43,7 +42,7 @@ _vous pouvez aussi activer la recherche automatique de basename en activant `var
 
 1.  créer les fichiers de production en utilisant `npm run build`, un
     dossier `build/` seras créer.
-2.  copier les dossiers `build/`, `images/`, `css/`, `json/` et le fichier `index.html` dans le répertoire de votre serveur
+2.  copier les dossiers `build/`, `images/`, `css/`, `json/`, `articles` et le fichier `index.html` dans le répertoire de votre serveur
 
 ### version de développement
 

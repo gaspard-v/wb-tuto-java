@@ -1,18 +1,35 @@
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import { useState, useEffect } from 'react';
 
 export default function Display({ data }) {
 	const { id } = useParams();
+	const [article, setArticle] = useState(null);
+	const id_a = id;
+	const fetchArticle = () => {
+		const article = data.find(
+			({ id, options: { hidden } }) => !hidden && id == id_a
+		);
+		if (!article) return;
+		const { filename } = article;
+		const article_url = `${BASENAME}/articles/${filename}`;
+		fetch(article_url)
+			.then(res => res.text())
+			.then(text => setArticle(text))
+			.catch(err => console.log(err));
+	};
+
+	useEffect(() => {
+		//setTimeout(fetchArticle, 5000); //pour le test
+		fetchArticle();
+	}, []);
+
 	if (!id) {
 		return <p>il n'y a rien pour l'instant</p>;
 	}
-	const id_a = id;
-	const article = data => {
-		const retour = data.find(
-			({ id, options: { hidden } }) => !hidden && id == id_a
-		);
-		if (!retour) return;
-		return decodeURIComponent(retour.content);
-	};
-	return <ReactMarkdown>{article(data)}</ReactMarkdown>;
+	if (!article) {
+		return <p>chargement ...</p>;
+	}
+
+	return <ReactMarkdown>{article}</ReactMarkdown>;
 }
