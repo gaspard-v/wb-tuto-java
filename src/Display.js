@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { useState, useEffect } from 'react';
+import Box from '@mui/material/Box';
 
 export default function Display({ data }) {
 	const { id } = useParams();
@@ -31,5 +32,9 @@ export default function Display({ data }) {
 		return <p>chargement ...</p>;
 	}
 
-	return <ReactMarkdown>{article}</ReactMarkdown>;
+	return (
+		<Box sx={{ height: '100%', width: '100%' }}>
+			<ReactMarkdown>{article}</ReactMarkdown>
+		</Box>
+	);
 }
