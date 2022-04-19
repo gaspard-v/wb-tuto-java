@@ -82,5 +82,4 @@ export default function App() {
 		}
 	}
 	return displayApp();
-	//return <Container maxWidth="xl">{displayApp()}</Container>;
 }

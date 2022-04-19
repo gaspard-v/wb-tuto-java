@@ -25,6 +25,10 @@ module.exports = (env, { mode }) => ({
 					loader: 'babel-loader',
 				},
 			},
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader'],
+			},
 		],
 	},
 	// configuration du fast refresh [2/3]

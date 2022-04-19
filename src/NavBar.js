@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Link from '@mui/material/Link';
 import { NavLink } from 'react-router-dom';
+import '../css/navbar.css';
 
 const pages = [
 	{
@@ -27,6 +28,8 @@ const pages = [
 	},
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+const navBarTitle = 'Tutos Java et JavaFX';
 
 const NavBar = () => {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -48,7 +51,7 @@ const NavBar = () => {
 	};
 
 	return (
-		<AppBar position="static">
+		<AppBar position="static" className="navbar">
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
 					<Typography
@@ -57,7 +60,7 @@ const NavBar = () => {
 						component="div"
 						sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
 					>
-						LOGO
+						{navBarTitle}
 					</Typography>
 
 					<Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -104,7 +107,7 @@ const NavBar = () => {
 						component="div"
 						sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
 					>
-						LOGO
+						{navBarTitle}
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
 						{pages.map(({ name, id, to }) => (
