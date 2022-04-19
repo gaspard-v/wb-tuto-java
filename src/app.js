@@ -1,4 +1,4 @@
-import Menu from './Menu';
+import NavBar from './NavBar';
 import Navigator from './Navigator';
 import { BrowserRouter } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -43,7 +43,7 @@ export default function App() {
 		if (data) {
 			return (
 				<BrowserRouter basename={BASENAME}>
-					<Menu data={data} />
+					<NavBar data={data} />
 					<Navigator data={data} />
 				</BrowserRouter>
 			);
