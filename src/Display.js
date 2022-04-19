@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import '../css/display.css';
+import remarkToc from 'remark-toc';
 
 export default function Display({ data }) {
 	const { id } = useParams();
@@ -32,10 +33,12 @@ export default function Display({ data }) {
 	if (!article) {
 		return <p>chargement ...</p>;
 	}
-
+	//TODO https://github.com/remarkjs/remark-toc#example-a-different-heading=
 	return (
 		<Box className="display">
-			<ReactMarkdown>{article}</ReactMarkdown>
+			<ReactMarkdown remarkPlugins={[[remarkToc, { heading: 'sommaire' }]]}>
+				{article}
+			</ReactMarkdown>
 		</Box>
 	);
 }
