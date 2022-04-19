@@ -11,4 +11,4 @@
 
 Nous devons paramètrer Eclipse pour qu’il utilise le JDK 8 et qu’il sache où trouver le le Scene Builder :
 
-![jdk](/images/preferences-jdk.png 'choix du JDK')
+![jdk](https://i.ibb.co/4SyGRM1/preferences-jdk.png 'choix du JDK')
