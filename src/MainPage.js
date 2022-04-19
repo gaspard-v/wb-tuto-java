@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import { useState, useEffect } from 'react';
+import Box from '@mui/material/Box';
 
 export default function MainPage() {
 	const [mainpage, setMainpage] = useState(null);
@@ -14,5 +15,9 @@ export default function MainPage() {
 		fetchMainPage();
 	}, []);
 	if (!mainpage) return <p>chargement ...</p>;
-	return <ReactMarkdown>{mainpage}</ReactMarkdown>;
+	return (
+		<Box>
+			<ReactMarkdown>{mainpage}</ReactMarkdown>
+		</Box>
+	);
 }
