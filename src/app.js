@@ -11,6 +11,7 @@ import AlertTitle from '@mui/material/AlertTitle';
 import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import Grid from '@mui/material/Grid';
+import '../css/GLOBAL.css';
 
 export default function App() {
 	const [data, setData] = useState(null);

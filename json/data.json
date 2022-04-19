@@ -6,8 +6,8 @@
 		"modification_date": "",
 		"title": "exécutable windows JAVA17",
 		"description": "Création d'un exécutable à partir d'un projet Java",
-		"filename": "part1.md",
-		"tags": ["tag1", "tag2"],
+		"filename": "windows_javafx_LTS17_eclipse.md",
+		"tags": ["jvm 17", "javafx", "eclipse", "windows"],
 		"options": {
 			"hidden": false,
 			"deprecated": false
