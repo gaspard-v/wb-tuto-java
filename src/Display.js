@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import '../css/display.css';
 import remarkToc from 'remark-toc';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 export default function Display({ data }) {
 	const { id } = useParams();
@@ -33,10 +35,12 @@ export default function Display({ data }) {
 	if (!article) {
 		return <p>chargement ...</p>;
 	}
-	//TODO https://github.com/remarkjs/remark-toc#example-a-different-heading=
 	return (
 		<Box className="display">
-			<ReactMarkdown remarkPlugins={[[remarkToc, { heading: 'sommaire' }]]}>
+			<ReactMarkdown
+				remarkPlugins={[[remarkToc, { heading: 'sommaire' }]]}
+				rehypePlugins={[rehypeSlug, rehypeAutolinkHeadings]}
+			>
 				{article}
 			</ReactMarkdown>
 		</Box>
