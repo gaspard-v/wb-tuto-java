@@ -33,7 +33,7 @@ export default function Display({ data }) {
 	if (!article) {
 		return <p>chargement ...</p>;
 	}
-
+	//TODO https://github.com/remarkjs/remark-toc#example-a-different-heading=
 	return (
 		<Box className="display">
 			<ReactMarkdown remarkPlugins={[[remarkToc, { heading: 'sommaire' }]]}>
