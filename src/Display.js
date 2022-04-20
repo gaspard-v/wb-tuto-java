@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import '../css/display.css';
+import remarkToc from 'remark-toc';
 
 export default function Display({ data }) {
 	const { id } = useParams();
@@ -35,7 +36,9 @@ export default function Display({ data }) {
 
 	return (
 		<Box className="display">
-			<ReactMarkdown>{article}</ReactMarkdown>
+			<ReactMarkdown remarkPlugins={[[remarkToc, { heading: 'sommaire' }]]}>
+				{article}
+			</ReactMarkdown>
 		</Box>
 	);
 }
