@@ -78,4 +78,8 @@ Nous allons compiler un projet Java en utilisant le JDK 17.
 
 **Le projet devrait maintenant être prêt à être compilé.**
 
-il ne reste plus qu'a cliquer sur "Run", et le projet doit normalement se lancer ;)
+il ne reste plus qu'a cliquer sur "Run", et le projet doit normalement se lancer.
+
+## Créer un .jar
+
+Pour cela, faites click droit sur le projet, puis "Export..."
