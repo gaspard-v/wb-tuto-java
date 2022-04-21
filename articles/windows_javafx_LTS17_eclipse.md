@@ -61,4 +61,21 @@ Nous allons compiler un projet Java en utilisant le JDK 17.
 
 3. Configurer le projet pour JavaFX.
    Faites clique droit sur votre projet, puis "Properties" -> "Java Build Path" -> "Libraries".
-   ![java build path](https://i.ibb.co/Cs43jdH/java-build-path-eclipse.png)
+
+   Nous allons ajouter la librarie JavaFX. cliquez sur "Add Library..." puis sur "JRE System Library" et enfin cliquez sur "User Library".
+   Puis sélectionnez "JavaFX", et enfin cliquez sur "Finish".
+   ![javafx](https://i.ibb.co/gPzX2x6/user-library-javafx.png)
+
+4. Paramétrer les options de Java
+
+   Toujours dans la fenètre "properties" du projet, allez dans "Run/Debug Settings", sélectionner votre App, puis cliquez sur "Edit...".
+   ![edit run settings](https://i.ibb.co/6WcbbqK/run-debug-setting-eclipse.png)
+
+   Allez dans l'onglet "Arguments", et ajouter dans "VM arguments" `--module-path C:\PROGRA~1\Java\javafx-sdk-17.X.Y\lib --add-modules=javafx.controls,javafx.fxml`.
+
+   ⚠️ATTENTION⚠️ pensais bien à mettre l'emplacement de votre javaFX.
+   ![configuration des arguments](https://i.ibb.co/25hqvKh/edit-configuration-eclipse.png)
+
+**Le projet devrait maintenant être prêt à être compilé.**
+
+il ne reste plus qu'a cliquer sur "Run", et le projet doit normalement se lancer ;)
