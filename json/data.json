@@ -4,10 +4,10 @@
 		"version": "1.0",
 		"creation_date": "",
 		"modification_date": "",
-		"title": "exécutable windows JAVA17",
-		"description": "Création d'un exécutable à partir d'un projet Java",
+		"title": "Compilation d'un projet Java sous Windows",
+		"description": "Création d'un fichier jar à partir d'un projet Java et JavaFX",
 		"filename": "windows_javafx_LTS17_eclipse.md",
-		"tags": ["jvm 17", "javafx", "eclipse", "windows"],
+		"tags": ["jdk 17", "javafx", "eclipse", "windows"],
 		"options": {
 			"hidden": false,
 			"deprecated": false
@@ -17,12 +17,12 @@
 	{
 		"id": 2,
 		"version": "1.0",
-		"creation_date": "date3",
-		"modification_date": "date4",
-		"title": "je suis un titre 1",
-		"description": "je suis une description 1",
-		"filename": "test2.md",
-		"tags": [],
+		"creation_date": "",
+		"modification_date": "",
+		"title": "Création d'un exécutable à partir d'un projet Java sous Windows",
+		"description": "Création d'un fichier exécutable à partir d'un projet Java et JavaFX",
+		"filename": "windows_javafx_LTS17_jpackage.md",
+		"tags": ["jdk 17", "javafx", "jpackage", "windows", "non-modular"],
 		"options": {}
 	}
 ]
