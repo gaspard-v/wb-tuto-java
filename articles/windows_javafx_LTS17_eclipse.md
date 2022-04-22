@@ -82,4 +82,13 @@ il ne reste plus qu'a cliquer sur "Run", et le projet doit normalement se lancer
 
 ## Créer un .jar
 
-Pour cela, faites click droit sur le projet, puis "Export..."
+Pour cela, faites click droit sur le projet, puis "Export...".
+
+Cliquez sur "Runnable Jar file", puis sur "Next".
+![export jar file](https://i.ibb.co/FJ6mZh6/export-jar-eclipse.png)
+
+Ensuite selectionnez "Package required libraries into generated JAR", et cliquez sur "Finish" sans oublier de mettre le nom du fichier .jar dans "Export destination".
+
+![finish export jar file](https://i.ibb.co/HBGDK6F/package-jar-eclipse.png)
+
+**Pour finir, vous pouvez lancer le programme par la commande `java --module-path C:\PROGRA~1\Java\javafx-sdk-17.X.Y\lib --add-modules=javafx.controls,javafx.fxml -jar .\mon-programme.jar`**
