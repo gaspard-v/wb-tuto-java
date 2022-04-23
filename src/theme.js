@@ -12,6 +12,9 @@ const theme = createTheme({
 		error: {
 			main: red.A400,
 		},
+		warning: {
+			main: '#ff9800',
+		},
 	},
 });
 

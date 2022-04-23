@@ -1,8 +1,5 @@
 .articles-list a {
-	text-decoration: none;
-}
-
-.articles-list li {
 	background-color: #dbdbdb;
 	margin-bottom: 10px;
+	text-decoration: none;
 }
