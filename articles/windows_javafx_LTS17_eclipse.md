@@ -21,7 +21,7 @@ La première étape consiste à télécharger et installer Java et Eclipse.
    Puis installez le.
 
 3. [Télécharger JavaFX pour JDK 17](https://gluonhq.com/products/javafx/) attention certaines versions sont payante ...
-   Décompresser l'archive dans `C:\PROGRA~1\Java\`.
+   Télécharger JavaFX en version SDK (⚠️faites attention de bien prendre le SDK) puis décompresser l'archive dans `C:\PROGRA~1\Java\`.
 
 4. Installer JavaFX sur Eclipse.
    Ouvrir la fenêtre préférence de Eclipse ('Windows' -> 'preferences') puis taper "library" dans la barre de recherche.
