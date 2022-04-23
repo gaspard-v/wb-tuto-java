@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"version": "1.0",
-		"creation_date": "03/04/20220",
+		"creation_date": "03/04/2022",
 		"modification_date": "18/04/2022",
 		"title": "Compilation d'un projet Java sous Windows",
 		"description": "Création d'un fichier jar à partir d'un projet Java et JavaFX",
@@ -10,7 +10,7 @@
 		"tags": ["jdk 17", "javafx", "eclipse", "windows"],
 		"options": {
 			"hidden": false,
-			"deprecated": true
+			"deprecated": false
 		}
 	},
 

@@ -74,13 +74,22 @@ export default function Display({ data }) {
 					</Stack>
 				</Box>
 			)}
-			{tags && <p>TAGS: {tags.map((tag, index) => `${tag} `)}</p>}
+			{tags && (
+				<p>
+					TAGS:{' '}
+					{tags.map(
+						(tag, index) => `${tag} ${index === tags.length - 1 ? '' : ' | '}`
+					)}
+				</p>
+			)}
 			<Box className="display-header">
 				<h1>{title}</h1>
 				<h2>{description}</h2>
 			</Box>
 			<ReactMarkdown
-				remarkPlugins={[[remarkToc, { heading: 'sommaire' }]]}
+				remarkPlugins={[
+					[remarkToc, { heading: 'toc|table[ -]of[ -]contents?|sommaire' }],
+				]}
 				rehypePlugins={[rehypeSlug, rehypeAutolinkHeadings]}
 			>
 				{text}
