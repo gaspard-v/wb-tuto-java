@@ -15,6 +15,17 @@ export function ArticlesListItems({ article }) {
 		options: { hidden, depreciated },
 	} = article;
 	if (hidden) return null;
+	const displayTags = () => {
+		if (tags.length === 0) return null;
+		return (
+			<Typography variant="inherit" color="textSecondary">
+				{' TAGS: '}
+				{tags.map(tag => {
+					return `${tag} `;
+				})}
+			</Typography>
+		);
+	};
 	return (
 		<Link
 			key={id}
@@ -32,10 +43,11 @@ export function ArticlesListItems({ article }) {
 								sx={{ display: 'inline' }}
 								component="span"
 								variant="body2"
-								color="text.secondary"
+								color="text.primary"
 							>
 								{description}
 							</Typography>
+							{displayTags()}
 						</React.Fragment>
 					}
 				/>

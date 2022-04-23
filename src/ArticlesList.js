@@ -1,10 +1,12 @@
 import * as React from 'react';
 import List from '@mui/material/List';
 import ArticlesListItems from './ArticlesListItems';
+import '../css/articles-list.css';
 
 export default function ArticlesList({ data }) {
 	return (
 		<List
+			className="articles-list"
 			sx={{
 				width: '100%',
 				maxWidth: 1024,
