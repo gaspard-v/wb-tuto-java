@@ -1,5 +1,3 @@
-# Création d'un fichier jar à partir d'un projet JavaFX sous Windows
-
 ## Introduction
 
 ce tutoriel a pour but de vous aider à créer un fichier jar à partir d'un projet JavaFX sous Windows, via l'IDE Eclipse.

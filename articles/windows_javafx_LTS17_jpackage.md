@@ -1,5 +1,3 @@
-# Création d'un exécutable d'un fichier jar à partir d'un projet Java et JavaFX.
-
 ## Introduction
 
 Ce tutoriel se focalisera sur la création d'un exécutable d'un fichier jar à partir d'un projet Java et JavaFX sur la version 17 du JDK (la version 11 est aussi supportée).
