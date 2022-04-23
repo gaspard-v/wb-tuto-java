@@ -13,7 +13,7 @@ export function ArticlesListItems({ article }) {
 		id,
 		tags,
 		filename,
-		options: { hidden, depreciated },
+		options: { hidden, deprecated },
 	} = article;
 	if (hidden) return null;
 	const displayTags = () => {
@@ -37,11 +37,11 @@ export function ArticlesListItems({ article }) {
 			to={`/article/${id}`}
 			color="inherit"
 			sx={{ mr: 2, color: 'black', display: 'block' }}
-			className={depreciated ? 'depreciated' : ''}
+			className={deprecated ? 'deprecated' : ''}
 		>
-			{depreciated && (
+			{deprecated && (
 				<Box px="13px" color="#ff7300">
-					DEPRECIATED
+					DEPRECATED
 				</Box>
 			)}
 			<ListItem alignItems="flex-start">

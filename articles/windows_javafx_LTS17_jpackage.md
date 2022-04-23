@@ -58,3 +58,9 @@ Il existe d'autres paramètres, disponible sur ce [lien](https://docs.oracle.com
 
 jpackage créer un un installateur pour votre programme, lancez le.
 Un fenêtre devrais apparaître:
+
+(exemple avec le projet 'Sallier')
+![exemple installateur](https://i.ibb.co/JkQWThs/setup-exe.png)
+
+Installer votre programme, celui-ci sera installer dans le répertoire `C:\Program Files\mon-programme`.
+Lancez le, votre programme devrait s'exécuter.
