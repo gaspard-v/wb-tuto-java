@@ -17,12 +17,15 @@
 	{
 		"id": 2,
 		"version": "1.0",
-		"creation_date": "",
-		"modification_date": "",
+		"creation_date": "19/04/2022",
+		"modification_date": "23/04/2022",
 		"title": "Création d'un exécutable à partir d'un projet Java sous Windows",
 		"description": "Création d'un fichier exécutable à partir d'un projet Java et JavaFX",
 		"filename": "windows_javafx_LTS17_jpackage.md",
 		"tags": ["jdk 17", "javafx", "jpackage", "windows", "non-modular"],
-		"options": {}
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
 	}
 ]

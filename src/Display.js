@@ -55,6 +55,7 @@ export default function Display({ data }) {
 		creation_date,
 		modification_date,
 		tags,
+		version,
 		options: { deprecated },
 	} = article;
 	return (
@@ -64,9 +65,10 @@ export default function Display({ data }) {
 					<Alert severity="warning">This article is deprecated</Alert>
 				</Box>
 			)}
-			{(creation_date || modification_date) && (
+			{(version || creation_date || modification_date) && (
 				<Box marginTop="10px">
 					<Stack direction="row" sx={{ width: '100%' }} spacing={2}>
+						{version && <Item>{`version: ${version}`}</Item>}
 						{creation_date && <Item>{`creation date: ${creation_date}`}</Item>}
 						{modification_date && (
 							<Item>{`last modification: ${modification_date}`}</Item>
