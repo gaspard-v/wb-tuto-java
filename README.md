@@ -42,7 +42,7 @@ _vous pouvez aussi activer la recherche automatique de basename en activant `var
 
 1.  créer les fichiers de production en utilisant `npm run build`, un
     dossier `build/` seras créer.
-2.  copier les dossiers `build/`, `images/`, `css/`, `json/`, `articles` et le fichier `index.html` dans le répertoire de votre serveur
+2.  copier les dossiers `build/`, `images/`, `css/`, `json/`, `articles` et les fichiers `index.html` et `.htaccess` dans le répertoire de votre serveur
 
 ### version de développement
 
