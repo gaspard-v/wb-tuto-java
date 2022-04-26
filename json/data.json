@@ -7,7 +7,7 @@
 		"title": "Compilation d'un projet Java sous Windows",
 		"description": "Création d'un fichier jar à partir d'un projet Java et JavaFX",
 		"filename": "windows_javafx_LTS17_eclipse.md",
-		"tags": ["jdk 17", "javafx", "eclipse", "windows"],
+		"tags": ["jdk 17", "jdk 11", "javafx", "eclipse", "windows"],
 		"options": {
 			"hidden": false,
 			"deprecated": false
@@ -22,7 +22,38 @@
 		"title": "Création d'un exécutable à partir d'un projet Java sous Windows",
 		"description": "Création d'un fichier exécutable à partir d'un projet Java et JavaFX",
 		"filename": "windows_javafx_LTS17_jpackage.md",
-		"tags": ["jdk 17", "javafx", "jpackage", "windows", "non-modular"],
+		"tags": [
+			"jdk 17",
+			"jdk 11",
+			"javafx",
+			"jpackage",
+			"windows",
+			"non-modular",
+			"modular"
+		],
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
+	},
+
+	{
+		"id": 3,
+		"version": "1.0",
+		"creation_date": "19/04/2022",
+		"modification_date": "23/04/2022",
+		"title": "Creating an executable from a Java project under Windows",
+		"description": "Creating an executable file from a Java and JavaFX project",
+		"filename": "windows_javafx_LTS17_jpackage_en.md",
+		"tags": [
+			"jdk 17",
+			"jdk 11",
+			"javafx",
+			"jpackage",
+			"windows",
+			"non-modular",
+			"modular"
+		],
 		"options": {
 			"hidden": false,
 			"deprecated": false
