@@ -40,8 +40,8 @@
 	{
 		"id": 3,
 		"version": "1.0",
-		"creation_date": "19/04/2022",
-		"modification_date": "23/04/2022",
+		"creation_date": "",
+		"modification_date": "",
 		"title": "Creating an executable from a Java project under Windows",
 		"description": "Creating an executable file from a Java and JavaFX project",
 		"filename": "windows_javafx_LTS17_jpackage_en.md",
@@ -54,6 +54,21 @@
 			"non-modular",
 			"modular"
 		],
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
+	},
+
+	{
+		"id": 4,
+		"version": "1.0",
+		"creation_date": "",
+		"modification_date": "",
+		"title": "Compiling a Java project under Windows",
+		"description": "Creating a jar file from a Java and JavaFX project",
+		"filename": "windows_javafx_LTS17_eclipse_en.md",
+		"tags": ["jdk 17", "jdk 11", "javafx", "eclipse", "windows"],
 		"options": {
 			"hidden": false,
 			"deprecated": false
