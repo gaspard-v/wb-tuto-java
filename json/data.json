@@ -4,7 +4,7 @@
 		"version": "1.0",
 		"creation_date": "03/04/2022",
 		"modification_date": "18/04/2022",
-		"title": "Compilation d'un projet Java sous Windows",
+		"title": "Compilation d'un projet Java 11 - 17 sous Windows",
 		"description": "Création d'un fichier jar à partir d'un projet Java et JavaFX",
 		"filename": "windows_javafx_LTS17_eclipse.md",
 		"tags": [
@@ -27,7 +27,7 @@
 		"version": "1.0",
 		"creation_date": "19/04/2022",
 		"modification_date": "23/04/2022",
-		"title": "Création d'un exécutable à partir d'un projet Java sous Windows",
+		"title": "Création d'un exécutable à partir d'un projet Java 11 - 17 sous Windows",
 		"description": "Création d'un fichier exécutable à partir d'un projet Java et JavaFX",
 		"filename": "windows_javafx_LTS17_jpackage.md",
 		"tags": [
@@ -50,8 +50,8 @@
 		"version": "1.0",
 		"creation_date": "",
 		"modification_date": "",
-		"title": "Creating an executable from a Java project under Windows",
-		"description": "Creating an executable file from a Java and JavaFX project",
+		"title": "Build an executable from a Java 11 - 17 project under Windows",
+		"description": "Build an executable file from a Java and JavaFX project",
 		"filename": "windows_javafx_LTS17_jpackage_en.md",
 		"tags": [
 			"jdk 17",
@@ -73,10 +73,25 @@
 		"version": "1.0",
 		"creation_date": "",
 		"modification_date": "",
-		"title": "Compiling a Java project under Windows",
+		"title": "Compiling a Java 11 - 17 project under Windows",
 		"description": "Creating a jar file from a Java and JavaFX project",
 		"filename": "windows_javafx_LTS17_eclipse_en.md",
 		"tags": ["jdk 17", "jdk 11", "javafx", "eclipse", "windows"],
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
+	},
+
+	{
+		"id": 5,
+		"version": "1.0",
+		"creation_date": "",
+		"modification_date": "",
+		"title": "Compilation d'un projet Java 8 sous Windows",
+		"description": "Création d'un fichier jar à partir d'un projet Java et JavaFX",
+		"filename": "windows_javafx_LTS8_eclipse.md",
+		"tags": ["jre8", "javafx", "eclipse", "windows"],
 		"options": {
 			"hidden": false,
 			"deprecated": false
