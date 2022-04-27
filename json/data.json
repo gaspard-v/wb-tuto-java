@@ -7,7 +7,15 @@
 		"title": "Compilation d'un projet Java sous Windows",
 		"description": "Création d'un fichier jar à partir d'un projet Java et JavaFX",
 		"filename": "windows_javafx_LTS17_eclipse.md",
-		"tags": ["jdk 17", "jdk 11", "javafx", "eclipse", "windows"],
+		"tags": [
+			"jdk 17",
+			"jdk 11",
+			"javafx",
+			"eclipse",
+			"windows",
+			"modular",
+			"non-modular"
+		],
 		"options": {
 			"hidden": false,
 			"deprecated": false
@@ -28,8 +36,8 @@
 			"javafx",
 			"jpackage",
 			"windows",
-			"non-modular",
-			"modular"
+			"modular",
+			"non-modular"
 		],
 		"options": {
 			"hidden": false,
