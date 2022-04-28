@@ -30,13 +30,13 @@ then run this command `jpackage --input ./ \ --name App_Name \ --main-jar MyJar.
 
 **list of parameters:**
 
-- `--input ./` paramètre indiquant dans quel dossier se trouve le fichier .jar. Ici le dossier courant.`
-- `--name App_Name` Nom de votre application tel qu'il sera affiché.
-- `--main-jar MyJar.jar` Votre fichier .jar (obtenu grâce à Eclipse).
-- `--main-class hellofx.Main` Indique la classe à exécuter.
-- `--type dmg` Le type d'installateur souaité, ici dmg pour Mac.`
-- `--module-path /Users/.../javafx-jmods-17.0.2` Chemin vers JMODS. Ajoute des modules dans l'exécutable final, pensez bien à vérifier ce que sont bien les fichiers JMODS et non pas les fichiers SDK, de plus vérifiez bien que la version correspond à votre JDK !
-- `--add-modules javafx.controls,javafx.fxml` Paramètre nécéssaire pour JavaFX
+- `--input ./` where to find the jar file. ./ means current folder`
+- `--name App_Name` App Name as displayed.
+- `--main-jar MyJar.jar` The .jar file.
+- `--main-class hellofx.Main` The main java class.
+- `--type dmg` dmg as we want macos installer`
+- `--module-path /Users/.../javafx-jmods-17.0.2` path to jmods in your java folder.
+- `--add-modules javafx.controls,javafx.fxml` additional parameters for JavaFX.
 
 There are other parameters, available at this [link](https://docs.oracle.com/en/java/javase/14/docs/specs/man/jpackage.html)
 
@@ -45,7 +45,7 @@ There are other parameters, available at this [link](https://docs.oracle.com/en/
 jpackage create an installer for your program, run it.
 A window should appear:
 
-![installation dmg](https://ibb.co/NYztgt1)
+![installation dmg](https://i.ibb.co/kyNYQtg/setup-dmg.png)
 
 Drag and drop.
 

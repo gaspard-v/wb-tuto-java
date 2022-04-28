@@ -45,7 +45,7 @@ Il existe d'autres paramètres, disponible sur ce [lien](https://docs.oracle.com
 jpackage créé un installateur pour votre programme, lancez le.
 Un fenêtre devrais apparaître:
 
-![installation dmg](https://ibb.co/NYztgt1)
+![installation dmg](https://i.ibb.co/kyNYQtg/setup-dmg.png)
 
 Glissez
 

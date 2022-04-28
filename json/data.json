@@ -152,7 +152,6 @@
 		"filename": "mac_javafx_LTS17_jpackage.md",
 		"tags": [
 			"jdk 17",
-			"jdk 11",
 			"javafx",
 			"jpackage",
 			"mac",
@@ -175,7 +174,6 @@
 		"filename": "mac_javafx_LTS17_jpackage_en.md",
 		"tags": [
 			"jdk 17",
-			"jdk 11",
 			"javafx",
 			"jpackage",
 			"mac",
@@ -187,4 +185,48 @@
 			"deprecated": false
 		}
 	},
+
+	{
+		"id": 11,
+		"version": "1.0",
+		"creation_date": "",
+		"modification_date": "",
+		"title": "Build an executable from a Java 8 project under Mac",
+		"description": "Build an executable file from a Java and JavaFX project",
+		"filename": "mac_javafx_LTS8_eclipse_en.md",
+		"tags": [
+			"jdk 8",
+			"javafx",
+			"jpackage",
+			"mac",
+			"non-modular",
+			"modular"
+		],
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
+	},
+
+	{
+		"id": 12,
+		"version": "1.0",
+		"creation_date": "",
+		"modification_date": "",
+		"title": "Création d'un exécutable à partir d'un projet Java 8 sous Mac",
+		"description": "Création d'un fichier exécutable à partir d'un projet Java et JavaFX",
+		"filename": "mac_javafx_LTS8_eclipse.md",
+		"tags": [
+			"jdk 8",
+			"javafx",
+			"jpackage",
+			"mac",
+			"non-modular",
+			"modular"
+		],
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
+	}
 ]
