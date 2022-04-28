@@ -91,7 +91,7 @@
 		"title": "Compilation d'un projet Java 8 sous Windows",
 		"description": "Création d'un fichier jar à partir d'un projet Java et JavaFX",
 		"filename": "windows_javafx_LTS8_eclipse.md",
-		"tags": ["jre8", "javafx", "eclipse", "windows"],
+		"tags": ["jdk8", "javafx", "eclipse", "windows"],
 		"options": {
 			"hidden": false,
 			"deprecated": false
@@ -106,7 +106,7 @@
 		"title": "Compiling a Java 8 project under Windows",
 		"description": "Creating a jar file from a Java and JavaFX project",
 		"filename": "windows_javafx_LTS8_eclipse_en.md",
-		"tags": ["jre8", "javafx", "eclipse", "windows"],
+		"tags": ["jdk8", "javafx", "eclipse", "windows"],
 		"options": {
 			"hidden": false,
 			"deprecated": false
