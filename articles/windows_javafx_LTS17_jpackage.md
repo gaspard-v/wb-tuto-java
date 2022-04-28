@@ -63,4 +63,4 @@ Un fenêtre devrais apparaître:
 Installer votre programme, celui-ci sera installer dans le répertoire `C:\Program Files\mon-programme`.
 Lancez le, votre programme devrait s'exécuter.
 
-![programmer exécuté](https://i.ibb.co/y6PM4rt/sallier-succesfull.png)
+![programme exécuté](https://i.ibb.co/y6PM4rt/sallier-succesfull.png)

@@ -36,6 +36,8 @@ ensuite exécutez cette commande `C:\PROGRA~1\Java\jdk1.8.0_321\bin\javapackager
 - `-outfile nom_de_mon_programme` nom de l'exécutable d'installation
 - `-outdir .` dossier ou l'exécutable sera créé
 
+[liste complète des paramètres](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javapackager.html)
+
 Votre terminal devrait afficher quelque chose du genre:
 
 ```
@@ -44,3 +46,17 @@ No base JDK. Package will use system JRE.
 No base JDK. Package will use system JRE.
 Installer (.exe) saved to: C:\Users\Gaspard\Sallier\.\bundles
 ```
+
+## Lancer le programme
+
+`javapackager` a créé un nouveau dossier `.\bundles` dans lequel se trouve un fichier exécutable `mon-programme-1.0.exe`.
+
+Ce programme est un installateur. Lancez le, une fenêtre devrait s'ouvrir.
+
+(exemple avec le projet 'Sallier')
+![exemple installateur](https://i.ibb.co/30Z9SXp/javapackager-start.png)
+
+Installer votre programme, celui-ci sera installer dans le répertoire `C:\Users\USER\AppData\Local\mon-programme`.
+Lancez le, votre programme devrait s'exécuter.
+
+![programme exécuté](https://i.ibb.co/y6PM4rt/sallier-succesfull.png)
