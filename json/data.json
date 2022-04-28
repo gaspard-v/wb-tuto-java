@@ -111,5 +111,20 @@
 			"hidden": false,
 			"deprecated": false
 		}
+	},
+
+	{
+		"id": 7,
+		"version": "1.0",
+		"creation_date": "",
+		"modification_date": "",
+		"title": "Création d'un exécutable à partir d'un projet Java 8 sous Windows",
+		"description": "Création d'un fichier exécutable à partir d'un projet Java et JavaFX",
+		"filename": "windows_javafx_LTS8_javapackager.md",
+		"tags": ["jdk8", "javafx", "eclipse", "windows", "javapackager"],
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
 	}
 ]

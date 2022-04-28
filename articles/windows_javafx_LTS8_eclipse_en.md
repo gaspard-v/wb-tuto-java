@@ -4,7 +4,7 @@ This tutorial aims to teach you how to create a .jar file from a Java project on
 The tutorial will focus on Java version 8, and only on this one.
 The version 8 is particular because it integrates JavaFX, which is not the case of version 11 and 17.
 
-## Contents
+## Table of Contents
 
 ## Installation of the development environment
 
