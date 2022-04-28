@@ -141,5 +141,50 @@
 			"hidden": false,
 			"deprecated": false
 		}
-	}
+	},
+	{
+		"id": 9,
+		"version": "1.0",
+		"creation_date": "19/04/2022",
+		"modification_date": "23/04/2022",
+		"title": "Création d'un exécutable à partir d'un projet Java 11 - 17 sous Mac",
+		"description": "Création d'un fichier exécutable à partir d'un projet Java et JavaFX",
+		"filename": "mac_javafx_LTS17_jpackage.md",
+		"tags": [
+			"jdk 17",
+			"jdk 11",
+			"javafx",
+			"jpackage",
+			"mac",
+			"modular",
+			"non-modular"
+		],
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
+	},
+
+	{
+		"id": 10,
+		"version": "1.0",
+		"creation_date": "",
+		"modification_date": "",
+		"title": "Build an executable from a Java 11 - 17 project under Mac",
+		"description": "Build an executable file from a Java and JavaFX project",
+		"filename": "mac_javafx_LTS17_jpackage_en.md",
+		"tags": [
+			"jdk 17",
+			"jdk 11",
+			"javafx",
+			"jpackage",
+			"mac",
+			"non-modular",
+			"modular"
+		],
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
+	},
 ]
