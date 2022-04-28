@@ -96,5 +96,20 @@
 			"hidden": false,
 			"deprecated": false
 		}
+	},
+
+	{
+		"id": 6,
+		"version": "1.0",
+		"creation_date": "",
+		"modification_date": "",
+		"title": "Compiling a Java 8 project under Windows",
+		"description": "Creating a jar file from a Java and JavaFX project",
+		"filename": "windows_javafx_LTS8_eclipse_en.md",
+		"tags": ["jre8", "javafx", "eclipse", "windows"],
+		"options": {
+			"hidden": false,
+			"deprecated": false
+		}
 	}
 ]
