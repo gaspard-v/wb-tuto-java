@@ -10,7 +10,7 @@ La verion 8 est particulière car celle ci intègre JavaFX, ce qui n'est pas le 
 
 La première étape consiste à télécharger et installer Java et Eclipse.
 
-1. [Télécharger le JDK 8](https://www.java.com/fr/download/manual.jsp)
+1. [Télécharger le JDK 8](https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html)
    Puis suivre les instructions pour installer le JDK, normalement le programme va installer java dans le dossier `C:\Program Files\Java\JDK1.8.0_X` (remplacer X par la version du JDK).
 
    ⚠️Attention⚠️ : Eclispe et java gèrent mal les espace dans les chemins, utiliser la commande `dir /x c:\` pour récupérer les chemins sans espace.
